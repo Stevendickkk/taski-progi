@@ -1,0 +1,7 @@
+git add .
+   |
+   V
+git commit -m "text message"
+   |
+   V
+git push origin master
