@@ -3,15 +3,16 @@ import java.util.Scanner;
 public class task1{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите сторону матрицы");
+        System.out.println("Введите кол-во строк");
         int x = sc.nextInt();
+        System.out.println("Введите кол-во столбцов");
         int y = sc.nextInt();
 
         int flag = 0;
         int arr[][] =  new int[x][y];
-        for (int i = 0; i < n ; i++){
+        for (int i = 0; i < x ; i++){
             int cp = 0;
-            for (int j = 0; j < n ; j++) {
+            for (int j = 0; j < y ; j++) {
                 arr[i][j] = sc.nextInt();
                 if (palin(arr[i][j])) {
                     cp++;
@@ -28,8 +29,8 @@ public class task1{
         }
 
         //вывод матрицы
-        for (int i = 0; i < n ; i++){
-            for (int j = 0; j < n ; j++){
+        for (int i = 0; i < x ; i++){
+            for (int j = 0; j < y ; j++){
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
